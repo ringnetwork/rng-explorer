@@ -1,10 +1,10 @@
 /*jslint node: true */
 'use strict';
 
-var db = require('trustnote-pow-common/db/db.js');
-var storage = require('trustnote-pow-common/db/storage.js');
-var round = require('trustnote-pow-common/pow/round.js');
-var gossiper = require('trustnote-pow-common/p2p/gossiper.js');
+var db = require('rng-core/db/db.js');
+var storage = require('rng-core/db/storage.js');
+var round = require('rng-core/pow/round.js');
+var gossiper = require('rng-core/p2p/gossiper.js');
 var moment = require('moment');
 var async = require('async');
 var staticdata = {};
@@ -129,7 +129,7 @@ function getRoundStatus(round_index,callback){
 }
 
 function getOnlinePeers(){
-	var network = require('trustnote-pow-common/p2p/network.js');
+	var network = require('rng-core/p2p/network.js');
 	return network.getOnLinePeers();
 }
 

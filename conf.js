@@ -4,7 +4,7 @@
 /**
  *	for version control
  */
-exports.clientName		= 'trustnote-pow-supernode';
+exports.clientName		= 'rng-explorer';
 exports.minClientVersion	= '1.1.0';
 
 

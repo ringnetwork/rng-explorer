@@ -1,1 +1,1 @@
-*/5 * * * * cd trustnote-relay; node check_daemon.js 1>>~/.config/trustnote-relay/check_daemon.log 2>>~/.config/trustnote-relay/check_daemon.err
+*/5 * * * * cd rng-relay; node check_daemon.js 1>>~/.config/rng-relay/check_daemon.log 2>>~/.config/rng-relay/check_daemon.err

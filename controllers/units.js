@@ -1,8 +1,8 @@
 /*jslint node: true */
 'use strict';
 
-var db = require('trustnote-pow-common/db/db.js');
-var storage = require('trustnote-pow-common/db/storage.js');
+var db = require('rng-core/db/db.js');
+var storage = require('rng-core/db/storage.js');
 var moment = require('moment');
 var async = require('async');
 

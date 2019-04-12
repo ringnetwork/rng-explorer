@@ -1,7 +1,7 @@
 /*jslint node: true */
 'use strict';
 
-var db = require('trustnote-pow-common/db/db.js');
+var db = require('rng-core/db/db.js');
 var moment = require('moment');
 var async = require('async');
 var BIGINT = 9223372036854775807;

@@ -85,13 +85,13 @@
 <!--top bar-->
 <div id="menu" class="rowFull">
 	<div id="menuLeft">
-		<a href="http://explorer.trustnote.org" id="menuLeftImg"><img src="/img/Trustnote_logo.png"></a>
+		<a href="http://explorer.ringnetwork.org" id="menuLeftImg"><img src="/img/Trustnote_logo.png"></a>
 	</div>
 </div>
 <!--data list-->
 <div class="main">
 	<div class="inputSearch">
-		<input type="text" id="search" placeholder="Your TrustNote wallet address">
+		<input type="text" id="search" placeholder="Your RingNetwork wallet address">
 		<button id="searchBtn">Search</button>
 		<p class="hint"></p>
 	</div>
@@ -122,7 +122,7 @@
 		function seachAll(){
 			$.ajax({
 				type: "get",
-				url: 'https://activity.trustnote.org/explorerManager/listByDay.htm',
+				url: 'https://activity.ringnetwork.org/explorerManager/listByDay.htm',
 				dataType:'json',
 				data:{
 					time: '',
@@ -150,7 +150,7 @@
 			for(i in hintArr){
 				html += '<tr style="border-bottom: 1px solid #E7EBF3">' +
 					'<td>#'+(parseInt(i)+1)+'</td>' +
-					'<td><a href=https://explorer.trustnote.org/detail#'+hintArr[i].address+'>'+hintArr[i].address+'</a></td>' +
+					'<td><a href=https://explorer.ringnetwork.org/detail#'+hintArr[i].address+'>'+hintArr[i].address+'</a></td>' +
 					'<td>'+format_num(parseInt(hintArr[i].amount))+'</td>' +
 					'</tr>'
 			}
@@ -166,7 +166,7 @@
 			var addRess = $("#search").val()
 			$.ajax({
 				type: "get",
-				url: 'https://activity.trustnote.org/explorerManager/rank.htm',
+				url: 'https://activity.ringnetwork.org/explorerManager/rank.htm',
 				dataType:'json',
 				data:{
 					address: addRess
@@ -174,7 +174,7 @@
 				crossDomain: true,
 				xhrFields: {withCredentials: true},
 				success: function (data) {
-					var html = 'Congratulations! You are the #'+data.entity.ranking+' richest with a value of '+data.entity.amount/1000000+' MN. Please click <a href='+"https://explorer.trustnote.org/detail#"+addRess+'>here</a>.'
+					var html = 'Congratulations! You are the #'+data.entity.ranking+' richest with a value of '+data.entity.amount/1000000+' MN. Please click <a href='+"https://explorer.ringnetwork.org/detail#"+addRess+'>here</a>.'
 					$(".hint").html(html)
 					$(".hint").show()
 				},

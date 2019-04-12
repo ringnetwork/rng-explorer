@@ -1,7 +1,7 @@
 /*jslint node: true */
 "use strict";
-var conf = require('trustnote-pow-common/config/conf.js');
-var myWitnesses = require('trustnote-pow-common/witness/my_witnesses.js');
+var conf = require('rng-core/config/conf.js');
+var myWitnesses = require('rng-core/witness/my_witnesses.js');
 
 
 function replaceConsoleLog () {
@@ -14,7 +14,7 @@ function replaceConsoleLog () {
 
 function start () {
 	console.log('starting');
-	var network = require('trustnote-pow-common/p2p/network.js');
+	var network = require('rng-core/p2p/network.js');
 	if (conf.initial_peers)
 		conf.initial_peers.forEach(function (url) {
 			network.findOutboundPeerOrConnect(url);

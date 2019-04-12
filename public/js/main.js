@@ -1154,7 +1154,7 @@ socket.on('staticdata', function (data) {
 	$('#allUnits').text(numberFormat(data.allUnits.toString())); // 交易
 })
 
-// // 已挖出 x 枚TTT  难度系数
+// // 已挖出 x 枚RNG  难度系数
 // socket.on('coinbase_mined', function (data) {
 // 	// console.log('******',data)
 // 	$('.issuedCoin').text(data.issuedCoinbase/1000000); // 已经挖出

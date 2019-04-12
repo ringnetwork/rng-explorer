@@ -1,11 +1,11 @@
 /*jslint node: true */
 'use strict';
 
-var db = require('trustnote-pow-common/db/db.js');
+var db = require('rng-core/db/db.js');
 var units = require('./units');
 var address = require('./address');
 var staticslib = require('./statics');
-var round = require('trustnote-pow-common/pow/round.js');
+var round = require('rng-core/pow/round.js');
 
 function start(data) {
 	var ws = this;
