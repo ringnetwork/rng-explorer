@@ -393,4 +393,9 @@ eventBus.on('headless_wallet_ready', function(){
 		var rpc_service = require('./lib/rpc_service.js');
 		rpc_service.initRPC();
 	}
+	if(conf.bServeAsRewardRpc){
+		var rpc_reward_service = require('./lib/rpc_reward_service.js');
+		rpc_reward_service.initRPC();
+	}
+	
 });

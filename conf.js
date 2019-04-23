@@ -25,6 +25,10 @@ exports.rpcInterface = '127.0.0.1';
 exports.rpcPort = 6553;
 exports.debug = false;
 
+// deposit reward
+exports.bServeAsRewardRpc = true;
+exports.rpcRewardPort = 6883;
+
 // byzantine
 exports.IF_BYZANTINE = true;
 
