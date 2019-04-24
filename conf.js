@@ -26,6 +26,7 @@ exports.rpcPort = 6553;
 exports.debug = false;
 
 // deposit reward
+exports.bCalculateReward = true;
 exports.bServeAsRewardRpc = true;
 exports.rpcRewardPort = 6883;
 
