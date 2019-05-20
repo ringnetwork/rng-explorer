@@ -16,7 +16,7 @@ exports.pushApiKey = '';
 exports.webPort = 8000;
 
 exports.port = 9194;
-exports.myUrl = 'ws://10.10.11.50:9194';
+exports.myUrl = 'ws://127.0.0.1:9194';
 exports.bServeAsHub = true;
 exports.bSaveJointJson = true;
 exports.bLight = false;
@@ -31,7 +31,7 @@ exports.bServeAsRewardRpc = true;
 exports.rpcRewardPort = 6883;
 
 // byzantine
-exports.IF_BYZANTINE = true;
+exports.IF_BYZANTINE = false;
 
 // this is used by wallet vendor only, to redirect bug reports to developers' email
 exports.bug_sink_email = 'admin@example.org';
@@ -40,7 +40,7 @@ exports.bugs_from_email = 'bugs@example.org';
 exports.HEARTBEAT_TIMEOUT = 300*1000;
 
 exports.initial_peers = [
-    "ws://119.28.44.246:9194",
+    "ws://explorer-beta2.ringnetwork.org:9194",
 ];
 
 exports.storage = 'sqlite';
