@@ -15,8 +15,8 @@ exports.pushApiKey = '';
 
 exports.webPort = 8000;
 
-exports.port = 9194;
-exports.myUrl = 'ws://127.0.0.1:9194';
+exports.port = 9195;
+exports.myUrl = 'ws://127.0.0.1:9195';
 exports.bServeAsHub = true;
 exports.bSaveJointJson = true;
 exports.bLight = false;
@@ -40,7 +40,7 @@ exports.bugs_from_email = 'bugs@example.org';
 exports.HEARTBEAT_TIMEOUT = 300*1000;
 
 exports.initial_peers = [
-    "ws://explorer-beta2.ringnetwork.org:9194",
+    "ws://explorer-beta2.ringnetwork.org:9195",
 ];
 
 exports.storage = 'sqlite';
